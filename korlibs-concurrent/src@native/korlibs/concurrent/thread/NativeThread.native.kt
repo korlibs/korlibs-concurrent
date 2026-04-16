@@ -28,7 +28,6 @@ private val threadInfos = LinkedHashMap<Long, ThreadInfo>()
 @OptIn(ExperimentalForeignApi::class)
 @PublishedApi
 internal fun __threadStart(code: COpaquePointer?): COpaquePointer? {
-    initRuntimeIfNeeded()
     val threadId: Long = NativeThreadThread_current()
     val ref = code!!.asStableRef<ThreadInfo>()
     val ptr = ref.get()

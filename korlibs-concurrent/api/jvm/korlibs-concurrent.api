@@ -8,7 +8,8 @@ public final class korlibs/concurrent/lock/BaseLock$Companion {
 
 public abstract interface class korlibs/concurrent/lock/BaseLockWithNotifyAndWait : korlibs/concurrent/lock/BaseLock {
 	public abstract fun notify (Lkotlin/Unit;)V
-	public abstract fun wait-LRDsOJo (J)V
+	public static synthetic fun notify$default (Lkorlibs/concurrent/lock/BaseLockWithNotifyAndWait;Lkotlin/Unit;ILjava/lang/Object;)V
+	public fun wait-LRDsOJo (J)V
 	public abstract fun wait-WoYshz0 (D)V
 }
 
